@@ -70,10 +70,10 @@ function fmtLakhs(val) {
   return `₹${val.toFixed(2)}L`;
 }
 
-const FONT = `'Instrument Serif', Georgia, serif`;
-const SANS = `'DM Sans', 'Segoe UI', sans-serif`;
+const FONT = `'Playfair Display', Georgia, serif`;
+const SANS = `'Plus Jakarta Sans', 'Inter', system-ui, sans-serif`;
 
-export default function SalaryCalculator() {
+export default function SPJIMRSalaryCalculator() {
   const [ctc, setCtc] = useState("");
   const [domain, setDomain] = useState("Consulting");
   const [companyType, setCompanyType] = useState("MNC (Top Tier)");
@@ -254,7 +254,7 @@ export default function SalaryCalculator() {
   return (
     <div style={{ minHeight: "100vh", background: "#0d0d0d", color: "#f0ece4", fontFamily: SANS, padding: "0" }}>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
         * { box-sizing: border-box; margin: 0; padding: 0; }
         ::-webkit-scrollbar { width: 6px; }
         ::-webkit-scrollbar-track { background: transparent; }
@@ -274,7 +274,7 @@ export default function SalaryCalculator() {
             SP
           </div>
           <div>
-            <h1 style={{ fontFamily: FONT, fontSize: 28, fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.1 }}>
+            <h1 style={{ fontFamily: FONT, fontSize: 30, fontWeight: 600, letterSpacing: "-0.01em", lineHeight: 1.15 }}>
               SPJIMR <span style={{ fontStyle: "italic", color: "#E8A758" }}>Salary</span> Calculator
             </h1>
             <p style={{ fontSize: 12, color: "rgba(255,255,255,0.35)", marginTop: 2, letterSpacing: "0.04em", textTransform: "uppercase" }}>
