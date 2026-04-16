@@ -577,12 +577,16 @@ export default function SalaryCalculator() {
         )}
       </div>
 
-      {/* Footer */}
+      
       <div style={{ textAlign: "center", padding: "12px 24px 28px", maxWidth: 880, margin: "0 auto" }}>
         <p style={{ fontSize: 10, color: "rgba(255,255,255,0.2)", lineHeight: 1.6 }}>
+          
           Data sourced from SPJIMR official placement reports (2024–2026). Sector-wise figures are estimates based on published trends. Tax calculations follow the New Tax Regime FY 2025-26. This is an indicative tool — actual compensation structures vary by employer.
         </p>
       </div>
+      <footer style={{ textAlign: 'center', padding: '1rem', fontSize: '0.85rem', color: '#666' }}>
+  © {new Date().getFullYear()} Akanksha Singh . All rights reserved.
+</footer>
     </div>
   );
 }
