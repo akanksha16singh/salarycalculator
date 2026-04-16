@@ -73,7 +73,7 @@ function fmtLakhs(val) {
 const FONT = `'Instrument Serif', Georgia, serif`;
 const SANS = `'DM Sans', 'Segoe UI', sans-serif`;
 
-export default function SalaryCalculator() {
+function SalaryCalculator() {
   const [ctc, setCtc] = useState("");
   const [domain, setDomain] = useState("Consulting");
   const [companyType, setCompanyType] = useState("MNC (Top Tier)");
@@ -590,3 +590,4 @@ export default function SalaryCalculator() {
     </div>
   );
 }
+export default SalaryCalculator;
