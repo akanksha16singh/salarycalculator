@@ -151,9 +151,10 @@ function fmtMonthly(lpa) {
 }
 function fmtLakhs(val) { return `₹${val.toFixed(2)}L`; }
 
-const FONT = `'Playfair Display', Georgia, serif`;
-const SANS = `'Plus Jakarta Sans', 'Inter', system-ui, sans-serif`;
-
+//const FONT = `'Playfair Display', Georgia, serif`;
+//const SANS = `'Plus Jakarta Sans', 'Inter', system-ui, sans-serif`;
+const FONT = `'Merriweather', serif`;
+const SANS = `'Inter', sans-serif`;
 // ─── Theme toggle button ──────────────────────────────────────────────────────
 function ThemeToggle({ isDark, onToggle, T }) {
   return (
